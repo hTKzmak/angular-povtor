@@ -1,0 +1,9 @@
+<div>
+    @for(user of users; track user.id){
+     <app-user-item 
+     [id]="user.id"
+     [name]="user.name"
+     [surname]="user.surname"
+     />   
+    }
+</div>
