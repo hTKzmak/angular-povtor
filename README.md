@@ -1,27 +1,27 @@
-# Myapp
+глобальная установка:
+npm install -g @angular/cli
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
+создание проекта:
+ng new название_проекта
 
-## Development server
+переход в каталог проекта:
+cd название_проекта
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+запуск:
+ng serve
 
-## Code scaffolding
+------------------------
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+создание компонента (несколько способов):
+создаётся в папке app:
+1)ng generate component название_компонента
+2)ng generate component /components/название_компонента
 
-## Build
+создаётся в папке components:
+3)ng g c /components/название_компонента
+4)ng g c название_компонента
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+------------------------
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Создание сервиса:
+ng generate service /service/UserList
